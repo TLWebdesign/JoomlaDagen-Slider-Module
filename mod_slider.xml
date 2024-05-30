@@ -90,4 +90,6 @@
         </server>
     </updateservers>
 
+    <changelogurl>https://www.website.nl/slider/changelog.xml</changelogurl>
+
 </extension>

@@ -1,0 +1,28 @@
+<changelogs>
+    <changelog>
+        <element>mod_slider</element>
+        <type>module</type>
+        <version>1.0.0</version>
+        <security>
+            <item>Item security</item>
+        </security>
+        <fix>
+            <item>Item fix</item>
+        </fix>
+        <language>
+            <item>Item language</item>
+        </language>
+        <addition>
+            <item>Item addition</item>
+        </addition>
+        <change>
+            <item>Item change</item>
+        </change>
+        <remove>
+            <item>Item remove</item>
+        </remove>
+        <note>
+            <item>Item note</item>
+        </note>
+</changelog>
+</changelogs>
