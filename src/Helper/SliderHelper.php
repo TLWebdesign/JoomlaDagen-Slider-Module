@@ -51,6 +51,9 @@ class SliderHelper implements DatabaseAwareInterface
         $appParams = $app->getParams();
         $articles->setState('params', $appParams);
 
+        $catids = $params->get('catid');
+        $articles->setState('filter.category_id', $catids);
+
         $items = $articles->getItems();
 
         foreach ($items as $item) {
