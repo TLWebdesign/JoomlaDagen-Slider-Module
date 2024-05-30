@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" method="upgrade">
+    <name>MOD_SLIDER</name>
+    <creationDate>May 2024</creationDate>
+    <author>Jouw naam</author>
+    <authorEmail>info@website.nl</authorEmail>
+    <authorUrl>https://website.nl</authorUrl>
+    <copyright>(C) 2024 Jouw naam</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <version>1.0.0</version>
+    <description>MOD_SLIDER_XML_DESCRIPTION</description>
+
+    <namespace path="src">JoomlaDagen\Module\Slider</namespace>
+    
+    <files>
+        <folder module="mod_slider">tmpl</folder>
+    </files>
+    
+    <config>
+        
+    </config>
+</extension>
