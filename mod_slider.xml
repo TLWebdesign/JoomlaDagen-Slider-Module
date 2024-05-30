@@ -16,6 +16,7 @@
         <folder module="mod_slider">services</folder>
         <folder>src</folder>
         <folder>tmpl</folder>
+        <folder>language</folder>
     </files>
     
     <config>
