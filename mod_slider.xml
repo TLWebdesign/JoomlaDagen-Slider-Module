@@ -18,6 +18,11 @@
         <folder>tmpl</folder>
         <folder>language</folder>
     </files>
+
+    <media folder="media" destination="mod_slider">
+		<folder>css</folder>
+		<folder>js</folder>
+	</media>
     
     <config>
         <fields name="params">

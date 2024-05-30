@@ -13,10 +13,15 @@
 use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Language\Text;
 
+/** @var Joomla\CMS\WebAsset\WebAssetManager $wa */
+$wa = $app->getDocument()->getWebAssetManager();
+$wa->registerAndUseStyle('mod_slider_style', 'mod_slider/style.css');
+$wa->registerAndUseScript('mod_slider_script', 'mod_slider/script.js');
+
 HTMLHelper::_('bootstrap.carousel', 'prettySliderCarousel' . $module->id);
 
 $slideCounter = 0;
-$autoPlay = $params->get("autoplay", null);
+$autoPlay     = $params->get("autoplay", null);
 ?>
 
 <div class="prettySliderWrapper">
@@ -29,8 +34,7 @@ $autoPlay = $params->get("autoplay", null);
             foreach ($slides as $slide) :
                 ?>
                 <div class="carousel-item <?php
-                echo ($slideCounter == 0) ? 'active' : ''; ?>"
-                     style="flex: 0 0 100%;">
+                echo ($slideCounter == 0) ? 'active' : ''; ?>">
                     <div class="w-100 h-100">
                         <img src="<?php
                         echo $slide->image->url; ?>"
