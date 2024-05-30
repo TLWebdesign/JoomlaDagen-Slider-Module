@@ -83,4 +83,11 @@
             </fieldset>
         </fields>
     </config>
+
+    <updateservers>
+        <server type="extension" priority="1" name="Slider Updates">
+            https://www.website.nl/slider/updates.xml
+        </server>
+    </updateservers>
+
 </extension>
