@@ -14,6 +14,7 @@ use Joomla\CMS\Application\SiteApplication;
 use Joomla\Database\DatabaseAwareInterface;
 use Joomla\Database\DatabaseAwareTrait;
 use Joomla\Registry\Registry;
+use Joomla\CMS\HTML\HTMLHelper;
 
 \defined('_JEXEC') or die;
 
@@ -50,8 +51,28 @@ class SliderHelper implements DatabaseAwareInterface
         $appParams = $app->getParams();
         $articles->setState('params', $appParams);
 
-        // tijdelijke naam slides
-        $slides = $articles->getItems();
+        $items = $articles->getItems();
+
+        foreach ($items as $item) {
+            $images = json_decode($item->images);
+
+            if ($images !== null && isset($images->image_intro)) {
+                $slide = new \stdClass();
+
+                $image = new \stdClass();
+                $cleanImageUrl = HTMLHelper::_('cleanImageURL', $images->image_intro);
+                $image->url   = $cleanImageUrl->url;
+                $image->height = $cleanImageUrl->attributes['height'];
+                $image->width = $cleanImageUrl->attributes['width'];
+                $image->caption = $images->image_intro_caption;
+                $image->alt     = $images->image_intro_alt;
+                $slide->image = $image;
+
+                $slide->title = $item->title;
+
+                $slides[] = $slide;
+            }
+        }
 
         return $slides;
     }

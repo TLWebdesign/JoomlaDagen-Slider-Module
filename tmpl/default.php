@@ -10,6 +10,6 @@
 
 \defined('_JEXEC') or die;
 
-var_dump($slides);die;
+var_dump($slides);
 
 ?>
