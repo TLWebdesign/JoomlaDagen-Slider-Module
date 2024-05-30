@@ -13,7 +13,9 @@
     <namespace path="src">JoomlaDagen\Module\Slider</namespace>
     
     <files>
-        <folder module="mod_slider">tmpl</folder>
+        <folder module="mod_slider">services</folder>
+        <folder>src</folder>
+        <folder>tmpl</folder>
     </files>
     
     <config>
