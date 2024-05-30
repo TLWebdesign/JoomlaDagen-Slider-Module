@@ -35,7 +35,7 @@ class Dispatcher extends AbstractModuleDispatcher implements HelperFactoryAwareI
     protected function getLayoutData(): array
     {
         $data = parent::getLayoutData();
-        
+        $data['slides'] = $this->getHelperFactory()->getHelper('SliderHelper')->getSlides($data['params'], $this->getApplication());
         return $data;
     }
 }

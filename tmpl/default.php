@@ -10,5 +10,6 @@
 
 \defined('_JEXEC') or die;
 
-echo "Hallo JoomlaDagen!";
+var_dump($slides);die;
+
 ?>
