@@ -86,10 +86,10 @@
 
     <updateservers>
         <server type="extension" priority="1" name="Slider Updates">
-            https://www.website.nl/slider/updates.xml
+            https://raw.githubusercontent.com/TLWebdesign/JoomlaDagen-Slider-Module/main/updates.xml
         </server>
     </updateservers>
 
-    <changelogurl>https://www.website.nl/slider/changelog.xml</changelogurl>
+    <changelogurl>https://raw.githubusercontent.com/TLWebdesign/JoomlaDagen-Slider-Module/main/changelog.xml</changelogurl>
 
 </extension>
